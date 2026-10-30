@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ProjectGo — Premium dining experience. Bold flavors, unforgettable moments." />
+  <title>ProjectGo — Fine Dining Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body class="loading">
+<!-- Loader -->
+<div class="loader" aria-hidden="true">
+  <div class="loader-logo">
+    <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>G</span><span>o</span>
+  </div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-trail" aria-hidden="true"></div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">Project<span>Go</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reserve.html">Reserve</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <button class="btn-icon cart-btn" aria-label="Open cart">
+        🛒
+        <span class="cart-count">0</span>
+      </button>
+      <a href="reserve.html" class="btn btn-primary btn-sm">Book a Table</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="reserve.html">Reserve</a>
+  <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+</nav>
+
+<main class="page-content">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="floating-el" aria-hidden="true">🍕</div>
+    <div class="floating-el" aria-hidden="true">🍷</div>
+    <div class="floating-el" aria-hidden="true">🥩</div>
+    <div class="floating-el" aria-hidden="true">🥗</div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-label">Est. 2018 · Fine Dining</div>
+        <h1>
+          <span class="word"><span style="animation-delay:0.1s">Bold</span></span>
+          <span class="word"><span style="animation-delay:0.2s">Flavors.</span></span><br />
+          <span class="word"><span style="animation-delay:0.35s">Unforgettable</span></span>
+          <span class="word"><span style="animation-delay:0.5s">Moments.</span></span>
+        </h1>
+        <p class="hero-desc lead">
+          Experience culinary artistry where every dish tells a story. ProjectGo brings together the finest ingredients, innovative techniques, and warm hospitality.
+        </p>
+        <div class="hero-cta">
+          <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+          <a href="reserve.html" class="btn btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee">
+      <span>Seasonal Ingredients</span>
+      <span>Farm to Table</span>
+      <span>Award-Winning Cuisine</span>
+      <span>Craft Cocktails</span>
+      <span>Private Dining</span>
+      <span>Chef's Tasting Menu</span>
+      <span>Seasonal Ingredients</span>
+      <span>Farm to Table</span>
+      <span>Award-Winning Cuisine</span>
+      <span>Craft Cocktails</span>
+      <span>Private Dining</span>
+      <span>Chef's Tasting Menu</span>
+    </div>
+  </div>
+
+  <!-- Featured Dishes -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Our Selection</span>
+        <h2>Featured Dishes</h2>
+        <p>Hand-picked favorites from our seasonal menu, crafted with passion and precision.(All made by Rolland Oyekorode)</p>
+      </div>
+      <div class="grid-3 featured-grid stagger">
+        <article class="dish-card tilt-card">
+          <div class="dish-card-visual">🦞</div>
+          <div class="dish-card-body">
+            <div class="dish-card-tags"><span class="tag">signature</span></div>
+            <h3>Lobster Linguine</h3>
+            <p>Fresh lobster, cherry tomatoes, garlic, white wine sauce</p>
+            <div class="dish-card-footer">
+              <span class="dish-price">$42</span>
+              <div class="dish-actions">
+                <button class="fav-btn" data-id="6" aria-label="Favorite">♥</button>
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="6">Add</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card tilt-card">
+          <div class="dish-card-visual">🥩</div>
+          <div class="dish-card-body">
+            <div class="dish-card-tags"><span class="tag gf">gluten-free</span></div>
+            <h3>Grilled Ribeye</h3>
+            <p>28-day aged ribeye, bone marrow butter, hand-cut fries</p>
+            <div class="dish-card-footer">
+              <span class="dish-price">$48</span>
+              <div class="dish-actions">
+                <button class="fav-btn" data-id="10" aria-label="Favorite">♥</button>
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="10">Add</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card tilt-card">
+          <div class="dish-card-visual">🍫</div>
+          <div class="dish-card-body">
+            <div class="dish-card-tags"><span class="tag">vegetarian</span></div>
+            <h3>Chocolate Fondant</h3>
+            <p>Warm dark chocolate cake, molten centre, vanilla ice cream</p>
+            <div class="dish-card-footer">
+              <span class="dish-price">$14</span>
+              <div class="dish-actions">
+                <button class="fav-btn" data-id="11" aria-label="Favorite">♥</button>
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="11">Add</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem" class="reveal">
+        <a href="menu.html" class="btn btn-outline">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Story -->
+  <section class="section" id="about" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="grid-2">
+        <div class="about-visual reveal-left" aria-hidden="true">👨‍🍳</div>
+        <div class="reveal-right">
+          <span class="label" style="color:var(--accent);font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase">Our Story</span>
+          <h2 style="margin:0.75rem 0 1.25rem">Crafted with Passion</h2>
+          <p style="margin-bottom:1rem">
+            Founded in 2018 by Chef Marco Bianchi, ProjectGo began as a small bistro with a big dream — to redefine modern fine dining through bold flavors and heartfelt hospitality.
+          </p>
+          <p style="margin-bottom:1.5rem">
+            Today, we source the finest seasonal ingredients from local farms and global artisans, creating dishes that celebrate both tradition and innovation. Every plate is a canvas, every meal a memory.
+          </p>
+          <a href="reserve.html" class="btn btn-primary">Dine With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="grid-4 stagger">
+        <div class="stat-item">
+          <div class="stat-number" data-target="15000" data-suffix="+">0</div>
+          <div class="stat-label">Guests Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="120" data-suffix="+">0</div>
+          <div class="stat-label">Signature Dishes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="8">0</div>
+          <div class="stat-label">Years Open</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="25" data-suffix="+">0</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef's Specials -->
+  <section class="section" id="specials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Limited Time</span>
+        <h2>Chef's Specials</h2>
+        <p>Exclusive creations available this season only.</p>
+      </div>
+      <div class="grid-2 stagger">
+        <article class="dish-card tilt-card">
+          <div class="dish-card-visual" style="height:250px;font-size:6rem">🐟</div>
+          <div class="dish-card-body">
+            <div class="dish-card-tags"><span class="tag gf">gluten-free</span></div>
+            <h3>Miso Black Cod</h3>
+            <p>Marinated black cod, bok choy, ginger beurre blanc — a customer favorite that sells out weekly.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price">$38</span>
+              <button class="btn btn-sm btn-primary add-to-cart" data-id="7">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="dish-card tilt-card">
+          <div class="dish-card-visual" style="height:250px;font-size:6rem">🍲</div>
+          <div class="dish-card-body">
+            <div class="dish-card-tags"><span class="tag spicy">spicy</span></div>
+            <h3>Spicy Lamb Tagine</h3>
+            <p>Slow-cooked lamb with apricot, almonds, couscous and a touch of harissa heat.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price">$34</span>
+              <button class="btn btn-sm btn-primary add-to-cart" data-id="9">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Testimonials</span>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="testimonials-wrapper reveal">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <blockquote>"An extraordinary dining experience. The lobster linguine is pure perfection, and the atmosphere is unmatched."</blockquote>
+            <div class="testimonial-author">Sophia Chen</div>
+            <div class="testimonial-role">Food Critic, City Magazine</div>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"ProjectGo has become our go-to for special occasions. Every visit feels like a celebration of flavor and hospitality."</blockquote>
+            <div class="testimonial-author">James & Elena Torres</div>
+            <div class="testimonial-role">Regular Guests</div>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"The attention to detail is remarkable. From the amuse-bouche to the final petit four, everything was flawless."</blockquote>
+            <div class="testimonial-author">Marcus Webb</div>
+            <div class="testimonial-role">Michelin Guide Contributor</div>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button class="testimonial-dot active" aria-label="Testimonial 1"></button>
+          <button class="testimonial-dot" aria-label="Testimonial 2"></button>
+          <button class="testimonial-dot" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours + Location -->
+  <section class="section" id="hours">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal-left">
+          <span class="label" style="color:var(--accent);font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase">Visit Us</span>
+          <h2 style="margin:0.75rem 0 1.25rem">Opening Hours</h2>
+          <div class="open-indicator" aria-live="polite"></div>
+          <div class="hours-grid">
+            <div class="hours-item"><span class="day">Monday – Thursday</span><span class="time">11:00 – 22:00</span></div>
+            <div class="hours-item"><span class="day">Friday – Saturday</span><span class="time">11:00 – 23:00</span></div>
+            <div class="hours-item"><span class="day">Sunday</span><span class="time">12:00 – 21:00</span></div>
+            <div class="hours-item"><span class="day">Kitchen Closes</span><span class="time">1hr before close</span></div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="about-visual" style="height:320px;font-size:5rem" aria-hidden="true">📍</div>
+          <div style="margin-top:1.5rem">
+            <h4 style="margin-bottom:0.5rem">123 Culinary Avenue</h4>
+            <p style="margin-bottom:0.5rem">Downtown District, NY 10001</p>
+            <p style="margin-bottom:1rem">+1 (212) 555-0142 · hello@projectgo.dining</p>
+            <a href="reserve.html" class="btn btn-primary btn-sm">Get Directions & Reserve</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Atmosphere</span>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-grid stagger">
+        <div class="gallery-item" aria-label="Restaurant interior">🍽️</div>
+        <div class="gallery-item" aria-label="Signature dish">🥩</div>
+        <div class="gallery-item" aria-label="Cocktail bar">🍸</div>
+        <div class="gallery-item" aria-label="Dessert presentation">🍰</div>
+        <div class="gallery-item" aria-label="Private dining">🥂</div>
+        <div class="gallery-item" aria-label="Fresh ingredients">🥗</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid" style="display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;margin-bottom:3rem">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Project<span>Go</span></a>
+        <p>Premium dining experience where bold flavors meet warm hospitality. Join us for an unforgettable culinary journey.</p>
+        <div class="social-links">
+          <a href="#" class="btn-icon" aria-label="Instagram">📷</a>
+          <a href="#" class="btn-icon" aria-label="Twitter">🐦</a>
+          <a href="#" class="btn-icon" aria-label="Facebook">📘</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserve.html">Reservations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+12125550142">+1 (212) 555-0142</a>
+        <a href="mailto:hello@projectgo.dining">hello@projectgo.dining</a>
+        <a href="#">123 Culinary Ave, NY</a>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.9rem;margin-bottom:1rem;color:var(--text-muted)">Get seasonal menus & exclusive offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required aria-label="Email for newsletter" />
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ProjectGo. All rights reserved.</span>
+      <span>Crafted with ❤️ for food lovers</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart Drawer -->
+<div class="cart-overlay" aria-hidden="true"></div>
+<aside class="cart-drawer" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button class="btn-icon cart-close" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-totals">
+      <div class="cart-row"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+      <div class="cart-row"><span>Tax (10%)</span><span id="cart-tax">$0.00</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cart-total">$0.00</span></div>
+    </div>
+    <button class="btn btn-primary" id="checkout-btn" style="width:100%">Checkout</button>
+  </div>
+</aside>
+
+<!-- Checkout Modal -->
+<div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+  <div class="modal checkout-success">
+    <div class="emoji">🎉</div>
+    <h3 id="checkout-title">Order Confirmed!</h3>
+    <p>Thank you for your order. We'll prepare everything with care. A confirmation has been sent to your email.</p>
+    <button class="btn btn-primary modal-close">Continue Browsing</button>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+<!-- Toast Container -->
+<div class="toast-container" aria-live="polite"></div>
+
+<script src="main.js"></script>
+<script src="features.js"></script>
+</body>
+</html>
